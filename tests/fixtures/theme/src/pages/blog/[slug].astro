@@ -1,0 +1,6 @@
+---
+export const getStaticPaths = () => [{ params: { slug: 'first' } }]
+const { slug } = Astro.params
+---
+
+<p>theme post {slug}</p>

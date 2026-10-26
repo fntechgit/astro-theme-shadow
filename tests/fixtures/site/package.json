@@ -1,0 +1,11 @@
+{
+  "name": "fixture-site",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@astrojs/react": "*",
+    "astro": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

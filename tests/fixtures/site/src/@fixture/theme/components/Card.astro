@@ -1,0 +1,11 @@
+---
+import ThemeCard from '@fixture/theme/src/components/Card.astro'
+---
+
+<section class="site-card"><ThemeCard><slot /></ThemeCard></section>
+
+<style>
+  .site-card {
+    --card: site-card-style;
+  }
+</style>

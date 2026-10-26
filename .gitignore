@@ -1,0 +1,8 @@
+node_modules
+dist
+*.log
+.DS_Store
+tests/fixtures/**/node_modules
+tests/fixtures/**/.astro
+tests/fixtures/**/dist
+tests/fixtures/.*-site

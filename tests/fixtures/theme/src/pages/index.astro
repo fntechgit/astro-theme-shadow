@@ -1,0 +1,14 @@
+---
+import Card from '../components/Card.astro'
+import Counter from '../components/Counter'
+import menu from '../data/menu.json'
+import logo from '../images/logo.svg?url'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="home">
+  <p id="menu">{menu.label}</p>
+  <img id="logo" src={logo} alt="" />
+  <Card>inside</Card>
+  <Counter client:load />
+</Layout>

@@ -1,0 +1,62 @@
+{
+  "name": "astro-theme-shadow",
+  "version": "0.1.0",
+  "description": "Theme shadowing for Astro: a site inherits a theme's pages and overrides any theme file by mirroring its path",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "packageManager": "pnpm@10.28.1",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "peerDependencies": {
+    "astro": "^7"
+  },
+  "dependencies": {
+    "tinyglobby": "^0.2.17"
+  },
+  "devDependencies": {
+    "@astrojs/react": "^6.0.6",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "astro": "^7.4.2",
+    "clsx": "^2.1.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^4.1.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fntechgit/astro-theme-shadow.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "astro",
+    "astro-integration",
+    "withastro",
+    "theme",
+    "shadowing",
+    "component-shadowing"
+  ],
+  "author": "FNTech",
+  "license": "MIT"
+}

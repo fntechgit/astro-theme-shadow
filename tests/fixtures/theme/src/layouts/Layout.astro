@@ -1,0 +1,16 @@
+---
+import Footer from '../components/Footer'
+import Header from '../components/Header.astro'
+import '../styles/theme.css'
+
+const { title } = Astro.props
+---
+
+<html lang="en">
+  <head><title>{title}</title></head>
+  <body>
+    <Header />
+    <main><slot /></main>
+    <Footer />
+  </body>
+</html>

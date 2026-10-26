@@ -1,0 +1,15 @@
+---
+import Card from '../components/Card.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="shadowed">
+  <p class="shadowed">site shadowed page</p>
+  <Card>inside</Card>
+</Layout>
+
+<style>
+  .shadowed {
+    --shadowed: site-shadowed-style;
+  }
+</style>
